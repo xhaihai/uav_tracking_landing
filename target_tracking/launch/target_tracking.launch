@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <!--启动仿真场景 -->
+  <include file="$(find target_tracking)/launch/scout_uav_sim.launch"> </include>
+
+  <!--坐标变换 -->
+  <node name="tf_uav_to_map_node" pkg="message_to_tf" type="tf_uav_to_map_node"
+  respawn="false" output="screen">
+  </node>
+  
+  <!--小车移动 -->
+  <include file="$(find summit_moves)/launch/summit_moves.launch"> </include>
+
+  
+</launch>

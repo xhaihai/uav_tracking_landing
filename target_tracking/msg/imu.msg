@@ -1,0 +1,6 @@
+geometry_msgs/Vector3 linear
+geometry_msgs/Vector3 angular
+geometry_msgs/Quaternion orientation
+float64 roll_angle
+float64 pitch_angle
+float64 yaw_angle
